@@ -4,23 +4,13 @@
 <div align="center">
 
 
-<img src="assets/logo.jpg" alt="logo" width="200" div al ign=center />
+<img src="Img/Logo.png" alt="logo" width="210" div al ign=center />
 
 </div>
 
-  <h1 align="center">Facial Decoration</h1>
+  <h1 align="center">Face_Mask_Detector</h1>
 
-  <p align="center">
-    Help you to discover a brand new self!
-    <br />
-      <a href="https://rtep-zero-to-one.github.io/rtep/"><strong>Full the docs »</strong></a>
-    <br />
-    <br />
-    <a href="#">View Demo</a> 
-    ·
-    <a href="#">Report Bug</a>
-    ·
-    <a href="#">Request Feature</a>
+ 
   </p>
 
 
@@ -29,10 +19,6 @@
 
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/RTEP-zero-to-one/FacialDecorationTracing?style=for-the-badge)
-![GitHub Repo stars](https://img.shields.io/github/stars/RTEP-zero-to-one/FacialDecorationTracing?style=for-the-badge)
-![Issues](https://img.shields.io/github/issues-raw/RTEP-zero-to-one/FacialDecorationTracing?style=for-the-badge)
-![Apache-2.0 License](https://img.shields.io/badge/LICENSE-Apache--2.0-yellowgreen?style=for-the-badge)
 
 <!-- TABLE OF CONTENTS -->
 
@@ -116,14 +102,14 @@ Distributed under the Apache License 2.0. See [`LICENSE`](https://github.com/RTE
 
 <!-- CONTACT -->
 
-## Contacts
+## Authors
 
-This project is being completed by a team of Msc Computer System Engineering students at the University of Glasgow:
 
-* [Tianze Zhang](https://github.com/ZTZWILL) 
-* [Xunan Wang](https://github.com/SheenaWang11)
-* [Luoxuan Peng](https://github.com/Xxxuan11)
-* [Heting Ying](https://github.com/XeonHis)
+
+* **Junhao Cheng** (https://github.com/JHCCCoder) 
+* **Minhao Han** (https://github.com/Hannidiot)
+* **Xiaoyang Wang** (https://github.com/Hannidiot)
+* **Ning li** (https://github.com/Hannidiot)
 
 
 
