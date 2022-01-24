@@ -1,87 +1,134 @@
-# Face_Mask_Detector
- 
-One Paragraph of project description goes here
- 
+<!-- PROJECT LOGO -->
+<br />
+
+<div align="center">
+
+
+<img src="assets/logo.jpg" alt="logo" width="200" div al ign=center />
+
+</div>
+
+  <h1 align="center">Facial Decoration</h1>
+
+  <p align="center">
+    Help you to discover a brand new self!
+    <br />
+      <a href="https://rtep-zero-to-one.github.io/rtep/"><strong>Full the docs »</strong></a>
+    <br />
+    <br />
+    <a href="#">View Demo</a> 
+    ·
+    <a href="#">Report Bug</a>
+    ·
+    <a href="#">Request Feature</a>
+  </p>
+
+
+
+
+
+</p>
+
+![Contributors](https://img.shields.io/github/contributors/RTEP-zero-to-one/FacialDecorationTracing?style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/RTEP-zero-to-one/FacialDecorationTracing?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues-raw/RTEP-zero-to-one/FacialDecorationTracing?style=for-the-badge)
+![Apache-2.0 License](https://img.shields.io/badge/LICENSE-Apache--2.0-yellowgreen?style=for-the-badge)
+
+<!-- TABLE OF CONTENTS -->
+
+<details open="open">
+  <summary>Catalogue</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#components-used">Components Used</a></li>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
+
+
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+The facial decoration is a real-time face detection and instant beautification application based on Raspberry Pi.
+In order to perform simple beauty functions, it can automatically and accurately identify the user's facial features. Then they can use whitening and dermabrasion functions to get flawless skin and put cute stickers on their face. Besides, this application has a series of filters, which could be selected when taking selfies or live streaming.
+
+### Components Used
+
+* OpenCV C++ API
+* QT C++ API
+* C++ Timer
+### Built With
+
+* GitHub Pages
+* ~~Doxygen~~(Not Confirmed)
+* Typora
+
+
+<!-- GETTING STARTED -->
 ## Getting Started
- 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
- 
+
+To-do: set up steps
+
 ### Prerequisites
- 
-What things you need to install the software and how to install them
- 
-```
-Give examples
-```
- 
-### Installing
- 
-A step by step series of examples that tell you how to get a development env running
- 
-Say what the step will be
- 
-```
-Give the example
-```
- 
-And repeat
- 
-```
-until finished
-```
- 
-End with an example of getting some data out of the system or using it for a little demo
- 
-## Running the tests
- 
-Explain how to run the automated tests for this system
- 
-### Break down into end to end tests
- 
-Explain what these tests test and why
- 
-```
-Give an example
-```
- 
-### And coding style tests
- 
-Explain what these tests test and why
- 
-```
-Give an example
-```
- 
-## Deployment
- 
-Add additional notes about how to deploy this on a live system
- 
-## Built With
- 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
- 
-## Contributing
- 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
- 
-## Versioning
- 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
- 
-## Authors
- 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
- 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
- 
+
+Specify which software dependencies and knowledgement are used and how to install them:
+
+  ```sh
+  to-do
+  ```
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+* Include screenshots, video demos and code examples to demonstrate the project
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+See the [open issues](https://github.com/RTEP-zero-to-one/FacialDecorationTracing/issues) for a list of proposed features (and known issues).
+
+
+<!-- LICENSE -->
 ## License
- 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
- 
-## Acknowledgments
- 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+
+Distributed under the Apache License 2.0. See [`LICENSE`](https://github.com/RTEP-zero-to-one/FacialDecorationTracing/blob/dev/LICENSE) for more information.
+
+<!-- CONTACT -->
+
+## Contacts
+
+This project is being completed by a team of Msc Computer System Engineering students at the University of Glasgow:
+
+* [Tianze Zhang](https://github.com/ZTZWILL) 
+* [Xunan Wang](https://github.com/SheenaWang11)
+* [Luoxuan Peng](https://github.com/Xxxuan11)
+* [Heting Ying](https://github.com/XeonHis)
+
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* 
+* 
+* 
