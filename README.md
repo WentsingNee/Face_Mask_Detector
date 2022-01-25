@@ -11,7 +11,7 @@
   <h1 align="center">Face_Mask_Detector</h1>
 
  
-  </p>
+</p>
 
 
 
@@ -25,8 +25,9 @@
 <details open="open">
   <summary>Catalogue</summary>
   <ol>
+    <li><a href="#about-the-project">About The Project</a>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#deployment">Deployment</a>
       <ul>
         <li><a href="#components-used">Components Used</a></li>
         <li><a href="#built-with">Built With</a></li>
@@ -36,13 +37,12 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#installing">Installing</a></li>
       </ul>
-    </li>
+    </li>  
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#authors">Authors</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
@@ -54,9 +54,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The facial decoration is a real-time face detection and instant beautification application based on Raspberry Pi.
-In order to perform simple beauty functions, it can automatically and accurately identify the user's facial features. Then they can use whitening and dermabrasion functions to get flawless skin and put cute stickers on their face. Besides, this application has a series of filters, which could be selected when taking selfies or live streaming.
+Since the outbreak of the epidemic in 2020, it has still not been controlled, and wearing a mask is the most effective way to prevent infection, so our idea for this project is to make a mask detector. The face mask detector is a real-time mask detection application based on Raspberry Pi.
+It can detect in real time whether pedestrians passing by the detector are wearing masks, and give a judgment result. If wearing a mask will give a green face recognition box, otherwise it will give a red face recognition box.
 
+<!-- Deployment -->
+## Deployment
 ### Components Used
 
 * OpenCV C++ API
@@ -65,14 +67,10 @@ In order to perform simple beauty functions, it can automatically and accurately
 ### Built With
 
 * GitHub Pages
-* ~~Doxygen~~(Not Confirmed)
-* Typora
-
+* [Maven](https://maven.apache.org/) - Dependency Management
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-To-do: set up steps
 
 ### Prerequisites
 
@@ -81,18 +79,19 @@ Specify which software dependencies and knowledgement are used and how to instal
   ```sh
   to-do
   ```
+### Installing
 
+A step by step series of examples that tell you how to get a development env running
 
+Say what the step will be
+
+  ```sh
+  Give the example
+  ```
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-* Include screenshots, video demos and code examples to demonstrate the project
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/RTEP-zero-to-one/FacialDecorationTracing/issues) for a list of proposed features (and known issues).
+* Include screenshots, video demos and code examples to demonstrate the project.
 
 
 <!-- LICENSE -->
@@ -108,8 +107,8 @@ Distributed under the Apache License 2.0. See [`LICENSE`](https://github.com/RTE
 
 * **Junhao Cheng** (https://github.com/JHCCCoder) 
 * **Minhao Han** (https://github.com/Hannidiot)
-* **Xiaoyang Wang** (https://github.com/Hannidiot)
-* **Ning li** (https://github.com/Hannidiot)
+* **Xiaoyang Wang** ()
+* **Ning li** ()
 
 
 
