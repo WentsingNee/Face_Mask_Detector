@@ -108,7 +108,7 @@ Distributed under the Apache License 2.0. See [`LICENSE`](https://github.com/RTE
 * **Junhao Cheng** (https://github.com/JHCCCoder) 
 * **Minhao Han** (https://github.com/Hannidiot)
 * **Xiaoyang Wang** ()
-* **Ning li** ()
+* **Ning li** (https://github.com/Kiva1020)
 
 
 
