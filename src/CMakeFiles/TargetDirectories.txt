@@ -1,0 +1,2 @@
+/Users/minhao/Workspace/Face_Mask_Detector/src/CMakeFiles/rebuild_cache.dir
+/Users/minhao/Workspace/Face_Mask_Detector/src/CMakeFiles/edit_cache.dir
