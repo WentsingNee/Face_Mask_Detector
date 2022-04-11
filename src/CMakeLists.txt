@@ -7,8 +7,14 @@ set(LIB_SRC
         mask_detector.cpp)
 
 find_package(OpenCV REQUIRED)
+IF(OpenCV_FOUND)
+    MESSAGE(STATUS "OpenCV_LIBS = ${OpenCV_LIBS}")
+ELSE(OpenCV_FOUND)
+    MESSAGE(STATUS "OpenCV_LIBS not found!")
+ENDIF(OpenCV_FOUND)
 # include Paddle Lite
-include_directories()
+#include_directories()
 
-add_executable(mask_detector main.cpp)
-target_link_libraries(mask_detector ${LIB_SRC})
+add_executable(FaceMaskDetection main.cpp)
+target_link_libraries(FaceMaskDetection ${LIB_SRC})
+target_link_libraries(FaceMaskDetection ${OpenCV_LIBS})
