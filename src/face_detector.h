@@ -5,20 +5,20 @@
 #include <string>
 #include <vector>
 
-#include <opencv2/opencv.hpp>
+#include "opencv2/opencv.hpp"
 #include "data_structures.h"
 
 #define num_featuremap 4
 #define hard_nms 1
 #define blending_nms 2
 
-class UltraFace {
+class FaceDetector {
 public:
-    UltraFace(const std::string& model_path,
-              int input_width, int input_length, int num_thread_ = 4,
-              float score_threshold_ = 0.7, float iou_threshold_ = 0.3, int topk_ = -1);
+    FaceDetector(const std::string& model_path,
+                 int input_width, int input_length, int num_thread_ = 4,
+                 float score_threshold_ = 0.7, float iou_threshold_ = 0.3, int topk_ = -1);
 
-    ~UltraFace();
+    ~FaceDetector();
 
     int detect(cv::Mat &img, std::vector<FaceInfo> &face_list);
 

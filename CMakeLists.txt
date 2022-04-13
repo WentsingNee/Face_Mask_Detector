@@ -1,10 +1,10 @@
 set(CMAKE_CXX_STANDARD 11)
-cmake_minimum_required(VERSION 3.21)
+cmake_minimum_required(VERSION 2.8)
 
-project (TEST)
+project(FaceMaskDetector)
 add_subdirectory(src)
-if (ENABLE_TESTING)
-    include(CTest)
-    enable_testing()
-    add_subdirectory(tests)
-endif()
+add_subdirectory(test)
+enable_testing()
+
+add_test (NAME MyTest COMMAND Test)
+add_test (NAME FaceDetectorTest COMMAND FaceDetectorTest)

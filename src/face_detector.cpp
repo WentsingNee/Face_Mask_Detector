@@ -5,9 +5,9 @@
 
 #define clip(x, y) (x < 0 ? 0 : (x > y ? y : x))
 
-UltraFace::UltraFace(const std::string& model_path,
-                     int input_width, int input_length, int num_thread_,
-                     float score_threshold_, float iou_threshold_, int topk_) {
+FaceDetector::FaceDetector(const std::string& model_path,
+                           int input_width, int input_length, int num_thread_,
+                           float score_threshold_, float iou_threshold_, int topk_) {
     num_thread = num_thread_;
     topk = topk_;
     score_threshold = score_threshold_;
@@ -51,9 +51,9 @@ UltraFace::UltraFace(const std::string& model_path,
     ultraface = cv::dnn::readNetFromONNX(model_path + "/version-slim-320_without_postprocessing.onnx");
 }
 
-UltraFace::~UltraFace() = default;
+FaceDetector::~FaceDetector() = default;
 
-int UltraFace::detect(cv::Mat &img, std::vector<FaceInfo> &face_list) {
+int FaceDetector::detect(cv::Mat &img, std::vector<FaceInfo> &face_list) {
     if (img.empty()) {
         std::cout << "image is empty ,please check!" << std::endl;
         return -1;
@@ -79,8 +79,8 @@ int UltraFace::detect(cv::Mat &img, std::vector<FaceInfo> &face_list) {
     return 0;
 }
 
-void UltraFace::generateBBox(std::vector<FaceInfo> &bbox_collection, cv::Mat scores, cv::Mat boxes,
-                             float score_threshold, int num_anchors) {
+void FaceDetector::generateBBox(std::vector<FaceInfo> &bbox_collection, cv::Mat scores, cv::Mat boxes,
+                                float score_threshold, int num_anchors) {
 
     auto* score_value = (float*)(scores.data);
     auto* bbox_value = (float*)(boxes.data);
@@ -103,7 +103,7 @@ void UltraFace::generateBBox(std::vector<FaceInfo> &bbox_collection, cv::Mat sco
     }
 }
 
-void UltraFace::nms(std::vector<FaceInfo> &input, std::vector<FaceInfo> &output, int type) {
+void FaceDetector::nms(std::vector<FaceInfo> &input, std::vector<FaceInfo> &output, int type) {
     std::sort(input.begin(), input.end(), [](const FaceInfo &a, const FaceInfo &b) { return a.score > b.score; });
 
     int box_num = input.size();

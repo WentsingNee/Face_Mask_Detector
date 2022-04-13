@@ -48,3 +48,7 @@ _deps
 
 # IDEA context folder
 .idea/
+
+# executable
+FaceMaskDetector
+test/*Test
