@@ -1,10 +1,9 @@
-<!-- PROJECT LOGO -->
 <br />
 
 <div align="center">
 
 
-<img src="Img/Logo.png" alt="logo" width="210" div al ign=center />
+<img src="assets/logo.png" alt="logo" width="210" div al ign=center />
 
 </div>
 
