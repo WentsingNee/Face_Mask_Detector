@@ -20,4 +20,12 @@ struct Image {
 
 };
 
+struct MaskDetectionSetting {
+
+};
+
+struct FaceDetectionSetting {
+
+};
+
 #endif //FACE_MASK_DETECTOR_DATA_STRUCTURES_H_
