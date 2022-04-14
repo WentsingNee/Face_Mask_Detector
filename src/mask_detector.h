@@ -8,21 +8,27 @@
 
 #include "data_structures.h"
 
+#define COLOR_MASK cv::Scalar(0, 255, 0)
+#define COLOR_NO_MASK cv::Scalar(0, 0, 255)
+
 using namespace paddle::lite_api;
 
 class MaskDetector {
 public:
-    MaskDetector(const MaskDetectionSetting& mdSetting ,const MobileConfig& mConfig);
-    ~MaskDetector();
+    MaskDetector(MaskDetectorSetting&& mdSetting);
 
-    cv::Mat detect(cv::Mat&& frame, const std::vector<FaceInfo>& faceInfoList);
+    void detect(Image& image);
+    void drawFaceMaskRects(Image& image);
 
 private:
     MobileConfig mobileConfig;
-    MaskDetectionSetting maskDetectionSetting;
-    std::unique_ptr<PaddlePredictor> predictor;
+    MaskDetectorSetting maskDetectionSetting;
+    std::shared_ptr<PaddlePredictor> predictor;
     std::unique_ptr<Tensor> inputTensor;
-    std::unique_ptr<Tensor> outputTensor;
+    std::unique_ptr<const Tensor> outputTensor;
+
+    // region of interest
+    cv::Mat normalise_roi(const cv::Mat& frame, FaceInfo face);
 };
 
 #endif // MASK_DETECTOR_H_
