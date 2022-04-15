@@ -1,5 +1,3 @@
-set (CMAKE_CXX_STANDARD 17)
-
 set (LIB_SRC
         bbox_tracker.cpp
         face_detector.cpp

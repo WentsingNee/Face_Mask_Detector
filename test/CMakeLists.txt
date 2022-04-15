@@ -1,4 +1,3 @@
-set (CMAKE_CXX_STANDARD 17)
 find_package (Boost COMPONENTS system filesystem unit_test_framework REQUIRED)
 find_package (OpenCV REQUIRED)
 add_compile_definitions (BOOST_TEST_DYN_LINK)
