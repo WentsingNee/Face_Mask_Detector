@@ -11,7 +11,7 @@ find_package (OpenCV REQUIRED)
 
 # include Paddle Lite
 set (PADDLE_LITE_DIR
-        /Users/minhao/Downloads/inference_lite_lib)
+        ${FaceMaskDetector_SOURCE_DIR}/lib/paddle-lite)
 include_directories (${PADDLE_LITE_DIR}/cxx/include)
 link_directories (${PADDLE_LITE_DIR}/cxx/lib)
 
