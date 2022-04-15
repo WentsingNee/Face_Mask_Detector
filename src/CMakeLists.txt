@@ -17,7 +17,7 @@ link_directories (${PADDLE_LITE_DIR}/cxx/lib)
 
 # build library for test
 add_library (FaceMaskDetectionLib ${LIB_SRC})
-target_link_libraries (FaceMaskDetectionLib ${OpenCV_LIBS})
+target_link_libraries (FaceMaskDetectionLib ${OpenCV_LIBS} paddle_light_api_shared)
 
 add_executable (FaceMaskDetector ${LIB_SRC} main.cpp)
-target_link_libraries (FaceMaskDetector ${OpenCV_LIBS})
+target_link_libraries (FaceMaskDetector ${OpenCV_LIBS} paddle_light_api_shared)

@@ -12,8 +12,8 @@ struct FaceInfo {
     float y2;
 
     // todo: refactor coordinates with cv::Point
-    cv::Point2f bottomLeft;
-    cv::Point2f topRight;
+    cv::Point2f topLeft;
+    cv::Point2f bottomRight;
 
     // face credibility faceScore
     float faceScore;
@@ -25,7 +25,6 @@ struct FaceInfo {
 
 struct Image {
     cv::Mat frame;
-    cv::Mat processed_frame;
     std::vector<FaceInfo> faceList;
 };
 

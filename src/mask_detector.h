@@ -18,7 +18,7 @@ public:
     MaskDetector(MaskDetectorSetting&& mdSetting);
 
     void detect(Image& image);
-    void drawFaceMaskRects(Image& image);
+    cv::Mat drawFaceMaskRects(Image& image);
 
 private:
     MobileConfig mobileConfig;

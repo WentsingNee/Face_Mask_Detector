@@ -11,13 +11,11 @@ MaskDetector::MaskDetector(MaskDetectorSetting&& mdSetting)
 }
 
 void MaskDetector::detect(Image& image) {
-    auto frame = image.frame;
-    auto faceInfoList = image.faceList;
     auto* input_data = inputTensor->mutable_data<float>();
     auto* output_data = outputTensor->data<float>();
 
-    for (auto face : faceInfoList) {
-        auto normalised_roi = normalise_roi(frame, face);
+    for (auto face : image.faceList) {
+        auto normalised_roi = normalise_roi(image.frame, face);
         if (!normalised_roi.empty()) {
             auto* img = reinterpret_cast<const float*>(normalised_roi.data);
 
@@ -40,20 +38,22 @@ void MaskDetector::detect(Image& image) {
     }
 }
 
-void MaskDetector::drawFaceMaskRects(Image& image) {
-    image.processed_frame(image.frame);
+cv::Mat MaskDetector::drawFaceMaskRects(Image& image) {
+    cv::Mat processed_frame(image.frame);
     for (auto face : image.faceList) {
         if (face.maskScore == 0) continue;
 
-        cv::Rect2f faceRect(face.bottomLeft, face.topRight);
-        cv::rectangle(image.processed_frame,
+        cv::Rect2f faceRect(face.topLeft, face.bottomRight);
+        cv::rectangle(processed_frame,
                       faceRect,
                       face.isWearingMask ? COLOR_MASK : COLOR_NO_MASK,
                       2);
     }
+    return processed_frame;
 }
 
 cv::Mat MaskDetector::normalise_roi(const cv::Mat &frame, FaceInfo face) {
+    // todo: remove the enlarge piece to face detector
     // enlarge face rect
     float width_offset = (face.x2 - face.x1) / 20.f;
     float height_offset = (face.y2 - face.y1) / 20.f;
